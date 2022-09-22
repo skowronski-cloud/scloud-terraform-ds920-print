@@ -1,0 +1,37 @@
+<h1>LABEL PRINTSERVER</h1>
+<ul>
+	<li>Windows</li>
+	<ul>
+		<li>General</li>
+		<ol>
+			<li>To solve <kbd>Microsoft Windows Network: you cannot access this shared folder because your organisation's security policies block unauthenticated guest access.</kbd> click on <a href="AllowInsecureGuestAuth.reg">AllowInsecureGuestAuth.reg</a></li>
+			<li>Connect to <b><u><kbd>\\${ip}</kbd></u></b> and map your printers</li>
+		</ol>
+		<li>DYMO Specific</li>
+		<ol>
+			<li>Open <b><u><kbd>\\${ip}\dymo</kbd></u></b> and install ".exe" file</li>
+		</ol>
+	</ul>
+	<li>macOS</li>
+	<ul>
+		<li>General</li>
+		<ol>
+			<li>Just open <i>System Preferences.app</i>, find <i>Printers & Scanners</i>, click <i>Add</i> button and add those ending with "@ print".</li>
+		</ol>
+		<li>DYMO Specific</li>
+		<ol>
+			<li><kbd>brew install dymo-label</kbd></li>
+			<li><u>or</u> install ".pkg" file from <a href="smb://${ip}/dymo"><kbd>smb://${ip}/dymo</kbd></a> (log in as Guest)</li>
+		</ol>
+	</ul>
+	<li>Troubleshooting</li>
+	<ul>
+		<li>Open <a href="http://${ip}:631/printers/">http://${ip}:631/printers/</a></li>
+	</ul>
+	<li>Labels - templates</li>
+	<ul>
+		%{ for label in labels }
+		<li><a href="/${label}">${label}</a></li>
+		%{ endfor ~}
+	</ul>
+</ul>

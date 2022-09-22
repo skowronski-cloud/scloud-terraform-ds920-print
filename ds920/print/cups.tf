@@ -20,11 +20,19 @@ resource "system_file" "cupsd_conf" {
   content = templatefile("files/cups/cupsd.conf", {
     ip = var.ip
   })
+
+  depends_on = [
+    data.system_command.dirs
+  ]
 }
 
 resource "system_file" "printers_conf" {
   path    = "/etc/cups/printers.conf"
   content = templatefile("files/cups/printers.conf", {})
+
+  depends_on = [
+    data.system_command.dirs
+  ]
 }
 
 resource "system_service_openrc" "cupsd" {

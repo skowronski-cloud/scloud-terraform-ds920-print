@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DieCutLabel Version="8.0" Units="twips" MediaType="Default">
+  <PaperOrientation>Landscape</PaperOrientation>
+  <Id>Storage</Id>
+  <PaperName>30258 Diskette</PaperName>
+  <DrawCommands>
+    <RoundRectangle X="0" Y="0" Width="3060" Height="3960" Rx="270" Ry="270"/>
+  </DrawCommands>
+  <ObjectInfo>
+    <TextObject>
+      <Name>TEXT</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255"/>
+      <LinkedObjectName></LinkedObjectName>
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>False</IsVariable>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Middle</VerticalAlignment>
+      <TextFitMode>AlwaysFit</TextFitMode>
+      <UseFullFontHeight>True</UseFullFontHeight>
+      <Verticalized>False</Verticalized>
+      <StyledText>
+        <Element>
+          <String>large 54x70mm</String>
+          <Attributes>
+            <Font Family="Ubuntu" Size="12" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+        <Element>
+          <String>645</String>
+          <Attributes>
+            <Font Family="Ubuntu" Size="12" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+        <Element>
+          <String> </String>
+          <Attributes>
+            <Font Family="Ubuntu" Size="12" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+        <Element>
+          <String>792</String>
+          <Attributes>
+            <Font Family="Ubuntu" Size="12" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+        <Element>
+          <String> </String>
+          <Attributes>
+            <Font Family="Ubuntu" Size="12" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+        <Element>
+          <String>572</String>
+          <Attributes>
+            <Font Family="Ubuntu" Size="12" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+        <Element>
+          <String> </String>
+          <Attributes>
+            <Font Family="Ubuntu" Size="12" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+        <Element>
+          <String>0</String>
+          <Attributes>
+            <Font Family="Ubuntu" Size="12" Bold="True" Italic="False" Underline="False" Strikeout="False"/>
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0"/>
+          </Attributes>
+        </Element>
+      </StyledText>
+    </TextObject>
+    <Bounds X="316.7999" Y="57.59979" Width="3556.8" Height="2923.2"/>
+  </ObjectInfo>
+</DieCutLabel>

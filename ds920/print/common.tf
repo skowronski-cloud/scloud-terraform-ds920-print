@@ -11,6 +11,14 @@ data "system_command" "upgrade" {
   ]
 }
 
+data "system_command" "dirs" {
+  command = "mkdir -p /usr/share/dymo/ /var/www/localhost/htdocs /etc/samba/ /etc/cups/ppd/ /var/lib/samba/printers/x64/3 /etc/lighttpd/"
+  
+  depends_on = [
+    system_packages_apk.common
+  ]
+}
+
 resource "system_packages_apk" "common" {
   package {
     name = "bash"
@@ -24,3 +32,5 @@ resource "system_packages_apk" "common" {
     data.system_command.upgrade
   ]
 }
+
+
