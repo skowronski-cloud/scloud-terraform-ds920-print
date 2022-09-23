@@ -1,3 +1,2 @@
-files/intermec/windows filter=lfs diff=lfs merge=lfs -text
 files/dymo/raster2dymolm filter=lfs diff=lfs merge=lfs -text
 files/dymo/raster2dymolw filter=lfs diff=lfs merge=lfs -text

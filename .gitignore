@@ -1,2 +1,4 @@
-files/tmp/
-files/drop/
+files/intermec/windows/*.sds
+files/intermec/windows/*.ini
+files/intermec/windows/*.chm
+files/intermec/windows/*.ddz
