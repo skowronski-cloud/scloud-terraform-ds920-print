@@ -28,6 +28,10 @@ resource "system_packages_apk" "common" {
     name = "dbus"
   }
 
+  package {
+    name = "gcompat"
+  }
+
   depends_on = [
     data.system_command.upgrade
   ]

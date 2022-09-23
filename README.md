@@ -14,17 +14,7 @@ printers:
 services:
 - cups with IPP
 - avahi for Bonjour
-
-## usage
-
-### macOS
-
-Just use system tools, eveyrthing is available via Bonjour.
-
-### Windows
-
-1. Connect to `\\192.168.0.111`
-   1. If there's error `Microsoft Windows Network: you cannot access this shared folder because your organisation's security policies block unauthenticated guest access.` the you need to 
+- samba with Point and Print drivers
 
 ## development
 
@@ -46,10 +36,11 @@ terraform import system_file.apk_repositories /etc/apk/repositories
 - better way of trigger+depends_on to watch changes on both sides
 
 ### cups
-- version = "=2.3.3-r2" # newer ones can't expose drivers properly
+
+- `version = "=2.3.3-r2"` # newer ones can't expose drivers properly
 - cups-browsed not needed
 
-### win
+### windows
 
 - https://opensource.apple.com/source/samba/samba-56/samba/docs/htmldocs/Samba-HOWTO-Collection.html
 - https://www.samba.org/samba/docs/current/man-html/rpcclient.1.html

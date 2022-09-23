@@ -33,6 +33,31 @@ data "system_command" "dymo_downloader" {
   ]
 }
 
+resource "null_resource" "dymo_filters" {
+  for_each = toset(["raster2dymolm", "raster2dymolw"])
+
+  connection {
+    host     = "${var.ip}"
+    type     = "ssh"
+    user     = "root"
+    private_key = file("~/.ssh/id_ed25519")
+  }
+
+  provisioner "file" {
+    destination = "/usr/lib/cups/filter/${each.value}"
+    source      = "files/dymo/${each.value}"
+  }
+
+  triggers = {
+    check_dymo_filters = data.system_command.check_dymo_filters[each.value].stdout
+  }
+
+  depends_on = [
+    data.system_command.dirs,
+    data.system_command.check_dymo_filters
+  ]
+}
+
 resource "null_resource" "samba_labels" {
   for_each = toset(var.labels)
 

@@ -31,3 +31,12 @@ data "system_command" "check_registry" {
     stdout = true
   }
 }
+
+data "system_command" "check_dymo_filters" {
+  for_each = toset(["raster2dymolm", "raster2dymolw"])
+
+  command = "md5sum /usr/lib/cups/filter/${each.value} || true"
+  expect {
+    stdout = true
+  }
+}
